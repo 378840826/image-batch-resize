@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "homepage": ".",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ myTestApp --out ./OutApp --overwrite --icon=./logo.ico"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0",
+    "electron-reloader": "^1.0.1"
+  },
+  "dependencies": {
+    "images": "^3.2.3"
+  }
+}

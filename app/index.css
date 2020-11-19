@@ -1,0 +1,10 @@
+.btn-select-in-path,
+.btn-select-out-path {
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 6px;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 4px;
+}
