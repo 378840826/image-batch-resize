@@ -58,13 +58,13 @@ app.on('activate', () => {
 })
 
 // 打开文件夹选择
-ipcMain.on('open-directory-dialog', (event, p) => {
+ipcMain.on('open-directory-dialog', (event, msg) => {
   dialog.showOpenDialog({
     // 只能选择目录
     properties: ['openDirectory'],
   }).then(result => {
-    event.sender.send('selectedOutDirectory', result.filePaths)
+    event.sender.send(msg, result.filePaths)
   }).catch(err => {
-    event.sender.send('selectedOutDirectory', false)
+    event.sender.send(msg, false)
   })
 });
