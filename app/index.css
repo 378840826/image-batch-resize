@@ -3,8 +3,23 @@
   position: relative;
   display: inline-block;
   line-height: 30px;
+  margin: 10px 0;
   padding: 0 6px;
   border: 1px solid;
   cursor: pointer;
   border-radius: 4px;
+}
+
+#id-start {
+  cursor: pointer;
+  padding: 5px 6px;
+  background: #f00;
+  color: #fff;
+  border: none;
+}
+
+.file-list {
+  max-height: 50vh;
+  min-height: 100px;
+  overflow: auto;
 }
